@@ -5,7 +5,7 @@
   <summary>Table of Contents:</summary>
   <ol>
     <li><a href="#About">About</a></li>
-    <li><a href="#Installation">Mathematical model</a></li>
+    <li><a href="#Mathematical model">Mathematical model</a></li>
     <li><a href="#Example">Example</a></li>
   </ol>
 </details>
@@ -49,8 +49,8 @@ data <- read.csv("data\\agaricus-lepiota.csv", header = TRUE)
 
 # Train-test split
 test_indx <- sample(1:dim(data)[1], round(dim(data)[1]/3))
-y_train = data$target[-test_indx]
-y_test = data$target[test_indx]
+y_train <- data$target[-test_indx]
+y_test <- data$target[test_indx]
 X_train <- data[-test_indx, -1]
 X_test <- data[test_indx, -1]
 
