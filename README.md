@@ -5,7 +5,7 @@
   <summary>Table of Contents:</summary>
   <ol>
     <li><a href="#About">About</a></li>
-    <li><a href="#Mathematical model">Mathematical model</a></li>
+    <li><a href="#Mathematical%20model">Mathematical model</a></li>
     <li><a href="#Example">Example</a></li>
   </ol>
 </details>
