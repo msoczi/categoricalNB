@@ -15,11 +15,11 @@
 The script contains implementation of the Naive Bayes algorithm for categorical variables that do not require coding. The algorithm can be used both for the binary classification problem and for multiclass classification.
 
 ## Mathematical model
-Let's assume that we have $n$ independent variables ($X_1, X_2, ..., X_n$) and target $Y$. Bayes' theorem states the following relationship
+Let's assume that we have ![equation](http://chart.apis.google.com/chart?cht=tx&chl=n) independent variables ![equation](http://chart.apis.google.com/chart?cht=tx&chl=X_1,X_2,...,X_n) and target ![equation](http://chart.apis.google.com/chart?cht=tx&chl=Y). Bayes' theorem states the following relationship
 <br>
 ![tree](img/formula1.PNG)
 <br>
-In practice, only the numerator of the fraction is interesting, because the denominator does not depend on $Y$, and the values of $X_i$ are given. The denominator is therefore constant. The numerator of the fraction is equivalent to the cumulative probability model
+In practice, only the numerator of the fraction is interesting, because the denominator does not depend on ![equation](http://chart.apis.google.com/chart?cht=tx&chl=Y), and the values of ![equation](http://chart.apis.google.com/chart?cht=tx&chl=X_i) are given. The denominator is therefore constant. The numerator of the fraction is equivalent to the cumulative probability model
 <br>
 ![tree](img/formula2.PNG)
 <br>
@@ -31,7 +31,7 @@ Now, using the assumption of conditional independence of the predictors, we can 
 <br>
 ![tree](img/formula4.PNG)
 <br>
-Since we want to predict the class of the $Y$ variable, it is only interesting for which value of the dependent variable is the highest probability, so we can omit the constant appearing in the denominator. Then the predicted class is
+Since we want to predict the class of the ![equation](http://chart.apis.google.com/chart?cht=tx&chl=Y) variable, it is only interesting for which value of the dependent variable is the highest probability, so we can omit the constant appearing in the denominator. Then the predicted class is
 <br>
 ![tree](img/formula5.PNG)
 <br>
