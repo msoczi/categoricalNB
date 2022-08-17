@@ -66,3 +66,16 @@ cat('ACCURACY\n',
 '\n  TEST:',sum(preds == as.character(y_test))/length(y_test)
 )
 ```
+
+## Comparison
+I compared the results of my own implementation with popular R and Python implementations in terms of accuracy and timing.
+<br>
+Comparison on test agaricus-lepiota dataset divided by `train_test_split(X, y, test_size = 0.33, random_state = 42)`.
+<br>
+|                         |  Accuracy |    AUC    |  Time (sec) |
+|:-----------------------:|:---------:|:---------:|:-----------:|
+|   categoricalNB (own)   | 0.9447967 | 0.9433333 | 0.06680608  |
+| CategoricalNB (sklearn) | 0.9447967 | 0.9433333 | 0.05624079  |
+|    naiveBayes (e1071)   | 0.9447967 | 0.9433333 | 0.01396394  |
+
+`CategoricalNB` form `sklearn` requires encoded data so the time needed to encode the data with the `OrdinalEncoder` method was taken into account.
